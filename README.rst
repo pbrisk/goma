@@ -2,9 +2,12 @@
 goma
 ====
 	
-.. image:: https://img.shields.io/codeship/dff6cee0-3f2b-0135-cf66-3aa03d7e55ef/master.svg
-    :target: https://codeship.com//projects/229716
-    
+.. image:: https://img.shields.io/codeship/15234800-4619-0135-9944-0ac58edb84f9/master.svg
+    :target: https://codeship.com//projects/231330
+
+.. image:: https://readthedocs.org/projects/goma/badge
+    :target: http://goma.readthedocs.io
+
 generic object mapping algorithms
 
-lib for easy to use complex mappings
+lib for easy implementing complex mappings procedures
