@@ -3,7 +3,4 @@
 Releases
 --------
 
-.. toctree::
-    :glob:
-
-    releases/release_*
+.. include:: ..//..//CHANGES.rst

@@ -1,20 +1,26 @@
 # -*- coding: utf-8 -*-
 
-#  goma
-#  ----
-#  General object mapping algorithm.
-#
-#  Author:  pbrisk <pbrisk_at_github@icloud.com>
-#  Copyright: 2016, 2017 Deutsche Postbank AG
-#  Website: https://github.com/pbrisk/goma
-#  License: APACHE Version 2 License (see LICENSE file)
+# goma
+# ----
+# Generic object mapping algorithm.
+# 
+# Author:   sonntagsgesicht, based on a fork of Deutsche Postbank [pbrisk]
+# Version:  0.2, copyright Saturday, 14 September 2019
+# Website:  https://github.com/sonntagsgesicht/goma
+# License:  Apache License 2.0 (see LICENSE file)
 
 
 import os
+import sys
 import unittest
-from goma import ExactMatch, PriorityMatch
 
 from datetime import datetime, date, timedelta
+
+sys.path.append('.')
+sys.path.append('..')
+
+from goma import ExactMatch, PriorityMatch
+
 
 class ExactMatchUnitTest(unittest.TestCase):
     def setUp(self):
@@ -23,13 +29,14 @@ class ExactMatchUnitTest(unittest.TestCase):
     def test_match(self):
         exact_match = ExactMatch()
 
-        detail_list = [["Property1","Value1_2"],["Property2","Value2_2"],["Property3","Value3_2"]]
-        mapping_list = [["Property1","Property2","Property3","Target"], \
-                        ["Value1_1","Value2_1","Value3_1","Target1"], \
-                        ["Value1_2","Value2_2","Value3_2","Target2"]]
+        detail_list = [["Property1", "Value1_2"], ["Property2", "Value2_2"], ["Property3", "Value3_2"]]
+        mapping_list = [["Property1", "Property2", "Property3", "Target"], \
+                        ["Value1_1", "Value2_1", "Value3_1", "Target1"], \
+                        ["Value1_2", "Value2_2", "Value3_2", "Target2"]]
 
         result = exact_match.match(detail_list, mapping_list)
-        self.assertEqual("Target2",result, "Mapping algorithm not set up properly.")
+        self.assertEqual("Target2", result, "Mapping algorithm not set up properly.")
+
 
 class PriorityMatchUnitTest(unittest.TestCase):
     def setUp(self):
@@ -38,19 +45,20 @@ class PriorityMatchUnitTest(unittest.TestCase):
     def test_match(self):
         priority_match = PriorityMatch()
 
-        detail_list = [["Property1","Value1_2"],["Property2","Value2_1"],["Property3","Value3_3"]]
-        mapping_list = [["Property1","Property2","Property3","Target"], \
-                        ["Value1_1","","Value3_1","Target1"], \
-                        ["Value1_1","","Value3_2","Target2"], \
-                        ["","Value2_1","Value3_3","Target3"], \
-                        ["","Value2_1","Value3_4","Target4"]]
+        detail_list = [["Property1", "Value1_2"], ["Property2", "Value2_1"], ["Property3", "Value3_3"]]
+        mapping_list = [["Property1", "Property2", "Property3", "Target"], \
+                        ["Value1_1", "", "Value3_1", "Target1"], \
+                        ["Value1_1", "", "Value3_2", "Target2"], \
+                        ["", "Value2_1", "Value3_3", "Target3"], \
+                        ["", "Value2_1", "Value3_4", "Target4"]]
 
         result = priority_match.match(detail_list, mapping_list)
-        self.assertEqual("Target3",result, "Mapping algorithm not set up properly.")
+        self.assertEqual("Target3", result, "Mapping algorithm not set up properly.")
+
 
 if __name__ == "__main__":
-
     import sys
+
     start_time = datetime.now()
 
     print('')

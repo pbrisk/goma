@@ -1,18 +1,18 @@
+
 ========
 Welcome!
 ========
 
 .. toctree::
-   :maxdepth: 2
-   
-   about
-   starting
-   tutorials
-   api
-   releases
+    :maxdepth: 3
+
+    intro
+    tutorial
+    doc
+    releases
 
 
-Indices and Tables
+Indices and tables
 ------------------
 
 * :ref:`genindex`

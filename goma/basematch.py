@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 
-#  goma
-#  ----
-#  Generic object mapping algorithm.
-#
-#  Author:  pbrisk <pbrisk_at_github@icloud.com>
-#  Copyright: 2016, 2017 Deutsche Postbank AG
-#  Website: https://github.com/pbrisk/goma
-#  License: APACHE Version 2 License (see LICENSE file)
+# goma
+# ----
+# Generic object mapping algorithm.
+# 
+# Author:   sonntagsgesicht, based on a fork of Deutsche Postbank [pbrisk]
+# Version:  0.2, copyright Saturday, 14 September 2019
+# Website:  https://github.com/sonntagsgesicht/goma
+# License:  Apache License 2.0 (see LICENSE file)
 
 
 class BaseMatch(object):
