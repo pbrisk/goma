@@ -10,7 +10,7 @@
 # License:  Apache License 2.0 (see LICENSE file)
 
 
-from basematch import BaseMatch
+from .basematch import BaseMatch
 
 
 class ExactMatch(BaseMatch):

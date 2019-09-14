@@ -10,8 +10,8 @@
 # License:  Apache License 2.0 (see LICENSE file)
 
 
-from basematch import BaseMatch
-from exactmatch import ExactMatch
+from .basematch import BaseMatch
+from .exactmatch import ExactMatch
 
 
 class PriorityMatch(BaseMatch):

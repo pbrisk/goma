@@ -29,6 +29,6 @@ __data__ = ()
 __scripts__ = ()
 
 
-from basematch import *
-from exactmatch import *
-from prioritymatch import *
+from .basematch import *
+from .exactmatch import *
+from .prioritymatch import *
