@@ -1,27 +1,29 @@
 
+.. py:currentmodule:: goma
 
 First setup basic objects
 =========================
 
-Setup model imports
+For a simple example setup imports and generate a nested list of match details.
 
-    >>> from exactmatch import ExactMatch
+.. doctest::
 
-For a simple example generate a nested list of match details
-
+    >>> from goma.exactmatch import ExactMatch
     >>> detail_list = [["Property1","Value1_2"],["Property2","Value2_2"],["Property3","Value3_2"]]
 
-and a mapping list as instruction for the mapping algorithm
+And define a mapping list as instruction for the mapping algorithm
 
-	>>> mapping_list = [["Property1","Property2","Property3","Target"], \
-                        ["Value1_1","Value2_1","Value3_1","Target1"], \
-                        ["Value1_2","Value2_2","Value3_2","Target2"]]
+.. doctest::
 
-Finally generate an :py:class:`exactmatch.ExactMatch` instance
+   >>> mapping_list = list()
+   >>> mapping_list.append(["Property1","Property2","Property3","Target"])
+   >>> mapping_list.append(["Value1_1","Value2_1","Value3_1","Target1"])
+   >>> mapping_list.append(["Value1_2","Value2_2","Value3_2","Target2"])
 
-	>>> exact_match = ExactMatch()
+Finally generate an :py:class:`exactmatch.ExactMatch` instance and run the matching algorithm
 
-and run the matching algorithm
+.. doctest::
 
+   >>> exact_match = ExactMatch()
     >>> exact_match.match(detail_list, mapping_list)
-	"Target2"
+   "Target2"
