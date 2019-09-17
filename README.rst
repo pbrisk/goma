@@ -1,12 +1,14 @@
-====
-goma
-====
+
+Python library *goma*
+---------------------
 
 .. image:: https://img.shields.io/codeship/af416f50-ba89-0137-8179-0660bd8c08b8/master.svg
-    :target: https://codeship.com//projects/364825
+   :target: https://codeship.com//projects/364825
+   :alt: CodeShip
 
 .. image:: https://travis-ci.org/sonntagsgesicht/goma.svg?branch=master
-    :target: https://travis-ci.org/sonntagsgesicht/goma
+   :target: https://travis-ci.org/sonntagsgesicht/goma
+   :alt: Travis ci
 
 .. image:: https://img.shields.io/readthedocs/goma
    :target: http://goma.readthedocs.io
@@ -20,9 +22,9 @@ goma
    :target: https://codeclimate.com/github/sonntagsgesicht/goma/maintainability
    :alt: Code Climate maintainability
 
-.. image:: https://img.shields.io/codeclimate/coverage/sonntagsgesicht/goma
-   :target: https://codeclimate.com/github/sonntagsgesicht/goma/test_coverage
-   :alt: Code Climate Coverage
+.. image:: https://img.shields.io/codecov/c/github/sonntagsgesicht/goma
+   :target: https://codecov.io/gh/sonntagsgesicht/goma
+   :alt: Codecov
 
 .. image:: https://img.shields.io/lgtm/grade/python/g/sonntagsgesicht/goma.svg
    :target: https://lgtm.com/projects/g/sonntagsgesicht/goma/context:python/
@@ -52,9 +54,9 @@ goma
    :target: https://pypi.org/project/goma/
    :alt: PyPI Downloads
 
-generic object mapping algorithms
+goma - generic object mapping algorithm
 
-lib for easy implementing complex mappings procedures
+A library for easy implementing complex mappings procedures.
 
 
 Development Version
