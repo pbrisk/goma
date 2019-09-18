@@ -20,7 +20,7 @@ And define a mapping list as instruction for the mapping algorithm
    >>> mapping_list.append(["Value1_1","Value2_1","Value3_1","Target1"])
    >>> mapping_list.append(["Value1_2","Value2_2","Value3_2","Target2"])
 
-Finally generate an :py:class:`exactmatch.ExactMatch` instance and run the matching algorithm
+Finally generate an |ExactMatch| instance and run the matching algorithm
 
 .. doctest::
 

@@ -1,4 +1,6 @@
 
+.. module:: goma
+
 -----------------
 API Documentation
 -----------------
@@ -9,24 +11,28 @@ API Documentation
 ExactMatch
 ==========
 
+.. py:currentmodule:: goma.exactmatch
+
 .. autosummary::
     :nosignatures:
 
-    exactmatch.ExactMatch
+    ExactMatch
 
-.. inheritance-diagram:: exactmatch
+.. inheritance-diagram:: goma.exactmatch
 
-.. automodule:: exactmatch
+.. automodule:: goma.exactmatch
 
 
 PriorityMatch
 =============
 
+.. py:currentmodule:: goma.prioritymatch
+
 .. autosummary::
     :nosignatures:
 
-    prioritymatch.PriorityMatch
+    PriorityMatch
 
-.. inheritance-diagram:: prioritymatch
+.. inheritance-diagram:: goma.prioritymatch
 
-.. automodule:: prioritymatch
+.. automodule:: goma.prioritymatch
