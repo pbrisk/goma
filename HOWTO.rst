@@ -25,5 +25,5 @@ Finally generate an |ExactMatch| instance and run the matching algorithm
 .. doctest::
 
    >>> exact_match = ExactMatch()
-    >>> exact_match.match(detail_list, mapping_list)
-   "Target2"
+   >>> exact_match.match(detail_list, mapping_list)
+   'Target2'
