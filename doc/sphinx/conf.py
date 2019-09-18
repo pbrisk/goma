@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 
-# unicum
-# ------
-# Python library for simple object cache and factory.
+# goma
+# ----
+# Generic object mapping algorithm.
 # 
 # Author:   sonntagsgesicht, based on a fork of Deutsche Postbank [pbrisk]
-# Version:  0.3, copyright Friday, 13 September 2019
-# Website:  https://github.com/sonntagsgesicht/unicum
+# Version:  0.2, copyright Wednesday, 18 September 2019
+# Website:  https://github.com/sonntagsgesicht/goma
 # License:  Apache License 2.0 (see LICENSE file)
 
 
